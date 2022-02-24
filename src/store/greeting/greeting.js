@@ -1,9 +1,9 @@
-const GET_GREETING_MESSAGE = "GET_GREETING_MESSAGE";
+const GET_GREETING_MESSAGE = 'GET_GREETING_MESSAGE';
 
 export const getGreetingAction = (data) => ({
   type: GET_GREETING_MESSAGE,
   payload: data,
-})
+});
 
 export default function greetingReducer(state = null, action) {
   switch (action.type) {
@@ -12,4 +12,4 @@ export default function greetingReducer(state = null, action) {
     default:
       return state;
   }
-} 
+}
